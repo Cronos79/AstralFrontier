@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{0F75CC6E-4B5E-5F58-C392-CA950BECD1F8}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "AstralFrontier",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
