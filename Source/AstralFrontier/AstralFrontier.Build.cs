@@ -15,8 +15,10 @@ public class AstralFrontier : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
-		string SQLitePath = Path.Combine(ModuleDirectory, "ThirdParty", "SQLite");
+        // Make "Source/AstralFrontier" an include root so "Core/..." works
+        PublicIncludePaths.Add(ModuleDirectory);
 
+        string SQLitePath = Path.Combine(ModuleDirectory, "ThirdParty", "SQLite");
 		PublicIncludePaths.Add(SQLitePath);
 
 		// Ensure sqlite3.c is compiled
